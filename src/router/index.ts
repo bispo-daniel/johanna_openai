@@ -1,10 +1,6 @@
 import { Router } from "express";
 
-import {
-  FineTuningRoute
-} from "./FineTuningRoute";
-
 const router = Router()
-  .use("/fine-tuning", FineTuningRoute);
+  .use("/", (_req, res) => res.status(200).end());
 
 export { router as ApiRouter };
