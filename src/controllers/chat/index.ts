@@ -1,5 +1,5 @@
 import { OPENAI_DEFAULT_SYSTEM_MESSAGE } from "@/config";
-import { io } from "@/server";
+import { io } from "../../server";
 import { textCompletion } from "@/services/OpenAI";
 import { ChatCompletionMessageParam } from "openai/resources";
 
