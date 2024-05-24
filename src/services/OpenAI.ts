@@ -9,7 +9,7 @@ export const textCompletion = async (messages: Array<ChatCompletionMessageParam>
     messages,
     model: OPENAI_MODEL,
     max_tokens: 200,
-    temperature: 0.8
+    temperature: 0.7
   });
 
   const chatText = response.choices[0].message.content;
